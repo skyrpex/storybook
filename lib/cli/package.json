@@ -33,7 +33,7 @@
   ],
   "scripts": {
     "prepare": "node ../../scripts/prepare.js && node -r esm ./scripts/generate-sb-packages-versions.js",
-    "test": "cd test && ./run_tests.sh",
+    "test": "jest test/**/*.test.js",
     "postversion": "node -r esm ./scripts/generate-sb-packages-versions.js"
   },
   "dependencies": {
